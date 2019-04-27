@@ -1,0 +1,118 @@
+{
+    // vim workaround //
+    "keyboard.dispatch": "keyCode",
+    //
+    "workbench.iconTheme": "material-icon-theme",
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.visible": true,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    //"C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    //"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "C_Cpp.clang_format_path": "/bin/clang-format",
+    "C_Cpp.autoAddFileAssociations": false,
+    "C_Cpp.default.cppStandard": "c++17",
+    "explorer.confirmDelete": false,
+    "cmake.configureOnOpen": true,
+    // "editor.lineNumbers": "relative",
+    "terminal.integrated.rendererType": "dom",
+    "latex-workshop.view.pdf.viewer": "browser",
+    "breadcrumbs.enabled": true,
+    "python.jediEnabled": true,
+    "git.autofetch": true,
+    "editor.fontFamily": "'Fira Code iScript', 'monospace', 'Droid Sans Fallback', 'Droid Sans Mono', monospace",
+    "editor.fontLigatures": true,
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            //following will be in italics (=Pacifico)
+            "comment",
+            "entity.name.type.class", //class names
+            "keyword", //import, export, return…
+            "support.class.builtin.js", //String, Number, Boolean…, this, super
+            "storage.modifier", //static keyword
+            "storage.type.class.js", //class keyword
+            "storage.type.function.js", // function keyword
+            "storage.type", // int, bool, char...
+            "storage.type.js", // Variable declarations
+            "keyword.control.import.js", // Imports
+            "keyword.control.from.js", // From-Keyword
+            "entity.name.type.js", // new … Expression
+            "keyword.control.flow.js", // await
+            "keyword.control.conditional.js", // if
+            "keyword.control.loop.js", // for
+            "keyword.operator.new.js", // new
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            //following will be excluded from italics (My theme (Monokai dark) has some defaults I don't want to be in italics)
+            "invalid",
+            "keyword.operator",
+            "constant.numeric.css",
+            "keyword.other.unit.px.css",
+            "constant.numeric.decimal.js",
+            "constant.numeric.json",
+            "entity.name.type.class.js"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Pink Cat Boo",
+    "workbench.colorCustomizations": {
+      // editor //
+      "editor.selectionBackground": "#bef0f7",
+
+      // status bar //
+      "statusBar.background": "#2d2f42",
+      "statusBar.foreground": "#fe7c8e",
+    },
+    // native terminal //
+    "open-native-terminal.use-default-terminal": "tilix archpink --profile=archpink",
+    "editor.largeFileOptimizations": false,
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+    // java //
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.format.settings.profile": "GoogleStyle",
+    //
+    "[javascript]": {},
+    "C_Cpp.updateChannel": "Insiders",
+    "[html]": {
+      "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "workbench.settings.useSplitJSON": true,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true,
+    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "editor.suggest.shareSuggestSelections": true,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "editor.cursorStyle": "line",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": false,
+    "editor.mouseWheelZoom": true,
+    "editor.overviewRulerBorder": true,
+    "zenMode.centerLayout": false,
+    "[java]": {},
+}
